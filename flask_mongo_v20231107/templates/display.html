@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF文件内容展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5386bc; /* 设置背景颜色 */
+            color: #fff; /* 设置文本颜色 */
+        }
+
+        h1 {
+            text-align: center; /* 让标题居中 */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+
+        table, th, td {
+            border: 1px solid #2262a7; /* 使用深色的边框 */
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2262a7; /* 表头背景颜色 */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF文件内容展示</h1>
+    <table>
+        {{ table1|safe }}
+        {{ table2|safe }}
+    </table>
+</body>
+</html>
